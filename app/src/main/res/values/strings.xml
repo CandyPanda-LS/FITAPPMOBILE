@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FITAPPMOBILE</string>
+    <string name="Google_sign_in">Sign in with Google</string>
 </resources>
