@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">FITAPPMOBILE</string>
     <string name="Google_sign_in">Sign in with Google</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    Lasal Strings-->
+    <string name="addExercises">Add Exercises</string>
+    <string name="customExercises">Custom Workouts</string>
+
+
+
 </resources>
