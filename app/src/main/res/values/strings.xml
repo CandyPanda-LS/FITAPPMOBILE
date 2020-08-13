@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">FITAPPMOBILE</string>
     <string name="Google_sign_in">Sign in with Google</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    Lasal Strings-->
+    <!--    Lasal Strings-->
     <string name="addExercises">Add Exercises</string>
     <string name="customExercises">Custom Workouts</string>
-
+    <string name="enterCurrentWeight">Enter Current Weight</string>
+    <string name="enterTargetWeight">Enter Target Weight</string>
+    <string name="enterCurrentHeight">Enter Current Height</string>
+    <string name="enterRequirement">Enter Requirement</string>
+    <string name="addbtn">Add</string>
+    <string name="addRequirement">Add Requirement</string>
 
 
 </resources>
