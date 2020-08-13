@@ -16,29 +16,13 @@
             android:layout_width="269dp"
             android:layout_height="61dp"
             android:background="@mipmap/btnadd"
-            android:text="@string/addbtn"
+            android:text="@string/updatebtn"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.765" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@mipmap/weight"
-            android:drawablePadding="16px"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/enterCurrentWeight"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.406" />
+            app:layout_constraintVertical_bias="0.807" />
 
         <EditText
             android:id="@+id/editTextTextPersonName5"
@@ -48,13 +32,41 @@
             android:drawablePadding="16px"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/enterTargetHeartPoints"
+            android:text="@string/updateTargetHeartPoints"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.472"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.631" />
+            app:layout_constraintVertical_bias="0.669" />
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="@string/enterCurrentDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/weight"
+            android:drawablePadding="16px"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/updateCurrentWeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.443" />
 
         <EditText
             android:id="@+id/editTextTextPersonName4"
@@ -64,34 +76,25 @@
             android:drawablePadding="16px"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/enterTargetSteps"
+            android:text="@string/updateTargetSteps"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.472"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.513" />
+            app:layout_constraintVertical_bias="0.551" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="@string/addRequirement"
-            android:textSize="34sp"
+            android:text="@string/updateRequirement"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="121dp" />
-
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date"
-            android:text="@string/enterCurrentDate"
-            tools:layout_editor_absoluteX="100dp"
-            tools:layout_editor_absoluteY="211dp" />
+            tools:layout_editor_absoluteY="127dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
