@@ -372,7 +372,7 @@
                             android:padding="10dp">
 
                             <com.github.mikephil.charting.charts.PieChart
-                                android:id="@+id/pieChart"
+                                android:id="@+id/pieChartSteps"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
 
@@ -407,8 +407,8 @@
                             android:background="@drawable/bg1"
                             android:padding="10dp">
 
-                            <com.github.mikephil.charting.charts.BarChart
-                                android:id="@+id/barChart"
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/pieChartHeartPoints"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
 

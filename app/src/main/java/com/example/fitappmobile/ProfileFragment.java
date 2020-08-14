@@ -32,31 +32,8 @@ public class ProfileFragment extends Fragment {
        View  rootView = inflater.inflate(R.layout.fragment_profile, container, false);
 
 
-        //Bar Chart
-        BarChart barChart =  (BarChart) rootView.findViewById(R.id.barChart);
-
-        ArrayList<BarEntry> visitors = new ArrayList<>();
-        visitors.add(new BarEntry(1,420));
-        visitors.add(new BarEntry(2,440));
-        visitors.add(new BarEntry(3,460));
-        visitors.add(new BarEntry(4,470));
-        visitors.add(new BarEntry(5,490));
-
-        BarDataSet barDataSet = new BarDataSet(visitors,"Days");
-        barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        barDataSet.setValueTextColor(Color.BLACK);
-        barDataSet.setValueTextSize(10f);
-
-        BarData barData = new BarData(barDataSet);
-
-        barChart.setFitBars(true);
-        barChart.setData(barData);
-        barChart.getDescription().setText("Daily Steps");
-        barChart.animateY(2000);
-
-
-        //Pie Chart
-        PieChart pieChart =  (PieChart) rootView.findViewById(R.id.pieChart);
+        //Pie Chart Steps
+        PieChart pieChart =  (PieChart) rootView.findViewById(R.id.pieChartSteps);
 
         ArrayList<PieEntry> visitorsPieChart = new ArrayList<>();
         visitorsPieChart.add(new PieEntry(60,"Completed"));
@@ -79,6 +56,31 @@ public class ProfileFragment extends Fragment {
         pieChart.setEntryLabelColor(Color.BLACK);
         pieChart.setEntryLabelTextSize(15);
         pieChart.animate();
+
+        //Pie Chart HeartPoints
+        PieChart pieChartHeartPoints =  (PieChart) rootView.findViewById(R.id.pieChartHeartPoints);
+
+        ArrayList<PieEntry> visitorsPieChartHeartPoints = new ArrayList<>();
+        visitorsPieChartHeartPoints.add(new PieEntry(70,"Completed"));
+        visitorsPieChartHeartPoints.add(new PieEntry(30,"Incomplete"));
+
+
+        PieDataSet pieDataSetHeartPoints = new PieDataSet(visitorsPieChartHeartPoints,"");
+        pieDataSetHeartPoints.setColors(Color.rgb(219, 15, 0), Color.rgb(250, 110, 100));
+        pieDataSetHeartPoints.setValueTextColor(Color.WHITE);
+        pieDataSetHeartPoints.setValueTextSize(10f);
+
+
+        PieData pieDataHeartPoints = new PieData(pieDataSetHeartPoints);
+
+        pieChartHeartPoints.setData(pieDataHeartPoints);
+        pieChartHeartPoints.getDescription().setEnabled(false);
+        pieChartHeartPoints.setCenterText("Heart Points");
+        pieChartHeartPoints.setHoleRadius(73f);
+        pieChartHeartPoints.setDrawSliceText(false);
+        pieChartHeartPoints.setEntryLabelColor(Color.BLACK);
+        pieChartHeartPoints.setEntryLabelTextSize(15);
+        pieChartHeartPoints.animate();
 
 
         return rootView;
