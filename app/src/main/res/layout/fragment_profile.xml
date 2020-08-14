@@ -226,7 +226,7 @@
                                 app:backgroundTint="@color/design_default_color_secondary_variant"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.107"
+                                app:layout_constraintHorizontal_bias="0.269"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.926" />
@@ -239,19 +239,7 @@
                                 app:backgroundTint="@color/design_default_color_error"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.862"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.926" />
-
-                            <Button
-                                android:id="@+id/button8"
-                                android:layout_width="80dp"
-                                android:layout_height="37dp"
-                                android:text="Edit"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.461"
+                                app:layout_constraintHorizontal_bias="0.692"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.926" />

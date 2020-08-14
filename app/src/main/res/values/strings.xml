@@ -27,5 +27,9 @@
     <string name="updatebtn">Update</string>
     <string name="updateRequirement">Update Daily Goal</string>
 
+    <!-- Add Daily Progress -->
+    <string name="addCompletedSteps">Enter Steps</string>
+    <string name="addHeartPoints">Enter Heart Points</string>
+
 
 </resources>
