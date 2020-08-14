@@ -16,45 +16,31 @@
             android:layout_width="269dp"
             android:layout_height="61dp"
             android:background="@mipmap/btnadd"
-            android:text="@string/addbtn"
+            android:text="@string/addMealBtn"
             android:textSize="18sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.394"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.765" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableStart="@mipmap/heart"
-            android:drawablePadding="16px"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Enter "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.631" />
+            app:layout_constraintVertical_bias="0.673" />
 
         <EditText
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@mipmap/steps"
+            android:drawableStart="@drawable/ic_meal"
             android:drawablePadding="16px"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Meal Name"
+            android:text="@string/addmealname"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.513" />
+            app:layout_constraintVertical_bias="0.349" />
 
         <TextView
             android:id="@+id/textView5"
@@ -65,9 +51,26 @@
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.224" />
+            app:layout_constraintVertical_bias="0.182" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_description"
+            android:drawablePadding="16px"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/mealdescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

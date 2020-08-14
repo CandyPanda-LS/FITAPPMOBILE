@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:background="@mipmap/btnadd"
             android:fontFamily="sans-serif-black"
-            android:text="Add"
+            android:text="@string/addbtn"
             android:textSize="18sp"
             app:backgroundTint="@android:color/holo_orange_dark"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
-            android:text="Description"
+            android:text="@string/addDiseaseDescription"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Disease Name"
+            android:text="@string/adddiseasename"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -64,10 +64,9 @@
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.62"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.126" />
+            app:layout_constraintVertical_bias="0.147" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

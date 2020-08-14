@@ -11,6 +11,8 @@
     <string name="LoremIpsum">
     is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
     </string>
+
+
     <!-- Senura Strings -->
 
     <!-- Add Daily Goal -->
@@ -31,6 +33,25 @@
     <!-- Add Daily Progress -->
     <string name="addCompletedSteps">Enter Steps</string>
     <string name="addHeartPoints">Enter Heart Points</string>
+
+
+    <!-- Jayani Strings -->
+
+    <!-- Add Meal  -->
+    <string name="addmealname"> Meal Name</string>
+    <string name="mealdescription">Description</string>
+    <string name="addMealBtn">Add Meal</string>
+
+    <!-- Chums Strings -->
+
+    <!-- Add Disease  -->
+    <string name="adddiseasename">Disease Name</string>
+    <string name="addDiseaseDescription">Description</string>
+    <string name="addDiseaseBtn">Add</string>
+
+    <string name="updateDiseaseBtn">Update Meal</string>
+
+
 
 
 </resources>
