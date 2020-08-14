@@ -34,52 +34,52 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <ProgressBar
-                            android:id="@+id/progressBar8"
-                            android:layout_width="124dp"
-                            android:layout_height="99dp"
-                            android:max="360"
-                            android:progress="270"
-                            android:progressDrawable="@drawable/circle"
+<!--                        <ProgressBar-->
+<!--                            android:id="@+id/progressBar8"-->
+<!--                            android:layout_width="124dp"-->
+<!--                            android:layout_height="99dp"-->
+<!--                            android:max="360"-->
+<!--                            android:progress="270"-->
+<!--                            android:progressDrawable="@drawable/circle"-->
 
-                            android:style="?android:progressBarStyleHorizontal"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.641" />
+<!--                            android:style="?android:progressBarStyleHorizontal"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintVertical_bias="0.641" />-->
 
-                        <ProgressBar
-                            android:id="@+id/progressBar9"
-                            android:layout_width="189dp"
-                            android:layout_height="142dp"
-                            android:max="360"
-                            android:progress="170"
-                            android:progressDrawable="@drawable/circle"
+<!--                        <ProgressBar-->
+<!--                            android:id="@+id/progressBar9"-->
+<!--                            android:layout_width="189dp"-->
+<!--                            android:layout_height="142dp"-->
+<!--                            android:max="360"-->
+<!--                            android:progress="170"-->
+<!--                            android:progressDrawable="@drawable/circle"-->
 
-                            android:style="?android:progressBarStyleHorizontal"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.503"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.655" />
+<!--                            android:style="?android:progressBarStyleHorizontal"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.503"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintVertical_bias="0.655" />-->
 
-                        <ProgressBar
-                            android:id="@+id/progressBar10"
-                            android:layout_width="252dp"
-                            android:layout_height="145dp"
-                            android:max="360"
-                            android:progress="270"
-                            android:progressDrawable="@drawable/circle"
+<!--                        <ProgressBar-->
+<!--                            android:id="@+id/progressBar10"-->
+<!--                            android:layout_width="252dp"-->
+<!--                            android:layout_height="145dp"-->
+<!--                            android:max="360"-->
+<!--                            android:progress="270"-->
+<!--                            android:progressDrawable="@drawable/circle"-->
 
-                            android:style="?android:progressBarStyleHorizontal"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.503"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.655" />
+<!--                            android:style="?android:progressBarStyleHorizontal"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.503"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintVertical_bias="0.655" />-->
 
                         <LinearLayout
                             android:id="@+id/linearLayout"
@@ -156,7 +156,7 @@
                             app:layout_constraintVertical_bias="0.958" />
 
                         <Button
-                            android:id="@+id/button8"
+                            android:id="@+id/updateDailyGoalBtn"
                             android:layout_width="106dp"
                             android:layout_height="37dp"
                             android:background="@drawable/button"

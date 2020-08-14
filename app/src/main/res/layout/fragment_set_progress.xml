@@ -60,6 +60,8 @@
             android:id="@+id/editTextDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_calander"
+            android:drawablePadding="16px"
             android:ems="10"
             android:inputType="date"
             android:text="@string/enterCurrentDate"
