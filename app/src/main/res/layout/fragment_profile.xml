@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5px">
+    android:padding="5dp"
+    android:layout_marginBottom="50dp"
+    android:id = "@+id/fragment_profile_container"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,9 +25,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -47,17 +50,18 @@
                                 android:id="@+id/button5"
                                 android:layout_width="103dp"
                                 android:layout_height="37dp"
+                                android:drawableStart="@drawable/ic_delete"
                                 android:text="DELETE"
-                                app:backgroundTint="@color/design_default_color_error"
+                                app:backgroundTint="@android:color/holo_red_dark"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.862"
+                                app:layout_constraintHorizontal_bias="0.849"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.926" />
 
                             <Button
-                                android:id="@+id/button8"
+                                android:id="@+id/updateDailyGoalBtn"
                                 android:layout_width="80dp"
                                 android:layout_height="37dp"
                                 android:text="Edit"
@@ -69,7 +73,7 @@
                                 app:layout_constraintVertical_bias="0.926" />
 
                             <Button
-                                android:id="@+id/button2"
+                                android:id="@+id/setDailyGoalBtn"
                                 android:layout_width="80dp"
                                 android:layout_height="37dp"
                                 android:text="SET"
@@ -197,9 +201,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -219,7 +223,7 @@
                             android:background="@drawable/bg1">
 
                             <Button
-                                android:id="@+id/button12"
+                                android:id="@+id/setProgressBtn"
                                 android:layout_width="80dp"
                                 android:layout_height="37dp"
                                 android:text="SET"
@@ -236,7 +240,7 @@
                                 android:layout_width="103dp"
                                 android:layout_height="37dp"
                                 android:text="DELETE"
-                                app:backgroundTint="@color/design_default_color_error"
+                                app:backgroundTint="@android:color/holo_red_dark"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.692"
@@ -337,9 +341,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -373,9 +377,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="10dp"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout

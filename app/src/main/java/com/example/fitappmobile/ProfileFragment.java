@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.charts.PieChart;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 
 public class ProfileFragment extends Fragment {
@@ -81,6 +83,48 @@ public class ProfileFragment extends Fragment {
         pieChartHeartPoints.setEntryLabelColor(Color.BLACK);
         pieChartHeartPoints.setEntryLabelTextSize(15);
         pieChartHeartPoints.animate();
+
+        //setDailyGoalBtn
+     Button setDailyGoalButtonFragment =  (Button) rootView.findViewById(R.id.setDailyGoalBtn);
+
+     //UpdateDailyGoalBtn
+     Button updateDailyGoalButtonFragment =  (Button) rootView.findViewById(R.id.updateDailyGoalBtn);
+
+     //setProgressBtn
+        Button setProgressBtnFragment =  (Button) rootView.findViewById(R.id.setProgressBtn);
+
+     //Navigate button for set daily goals
+     setDailyGoalButtonFragment.setOnClickListener(new View.OnClickListener(){
+       @Override
+      public void onClick(View v){
+        FragmentTransaction fr = getFragmentManager().beginTransaction();
+        fr.replace(R.id.fragment_profile_container, new UserRequirementFragment());
+        fr.commit();
+       }
+
+     });
+
+     //Navigate button for update daily goals
+        updateDailyGoalButtonFragment.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                FragmentTransaction frDailyGoalUpdate = getFragmentManager().beginTransaction();
+                frDailyGoalUpdate.replace(R.id.fragment_profile_container, new UpdateDailyGoal());
+                frDailyGoalUpdate.commit();
+            }
+
+        });
+
+        //Navigate button for set daily progress
+        setProgressBtnFragment.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                FragmentTransaction frDailyProgress = getFragmentManager().beginTransaction();
+                frDailyProgress.replace(R.id.fragment_profile_container, new SetProgressFragment());
+                frDailyProgress.commit();
+            }
+
+        });
 
 
         return rootView;
