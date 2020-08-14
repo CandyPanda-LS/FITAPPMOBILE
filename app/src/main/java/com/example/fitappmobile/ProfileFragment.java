@@ -7,9 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
@@ -49,6 +53,32 @@ public class ProfileFragment extends Fragment {
         barChart.setData(barData);
         barChart.getDescription().setText("Daily Steps");
         barChart.animateY(2000);
+
+
+        //Pie Chart
+        PieChart pieChart =  (PieChart) rootView.findViewById(R.id.pieChart);
+
+        ArrayList<PieEntry> visitorsPieChart = new ArrayList<>();
+        visitorsPieChart.add(new PieEntry(60,"Completed"));
+        visitorsPieChart.add(new PieEntry(40,"Incomplete"));
+
+
+        PieDataSet pieDataSet = new PieDataSet(visitorsPieChart,"");
+        pieDataSet.setColors(Color.rgb(5, 101, 255), Color.rgb(39, 76, 135));
+        pieDataSet.setValueTextColor(Color.WHITE);
+        pieDataSet.setValueTextSize(10f);
+
+
+        PieData pieData = new PieData(pieDataSet);
+
+        pieChart.setData(pieData);
+        pieChart.getDescription().setEnabled(false);
+        pieChart.setCenterText("Steps");
+        pieChart.setHoleRadius(73f);
+        pieChart.setDrawSliceText(false);
+        pieChart.setEntryLabelColor(Color.BLACK);
+        pieChart.setEntryLabelTextSize(15);
+        pieChart.animate();
 
 
         return rootView;
