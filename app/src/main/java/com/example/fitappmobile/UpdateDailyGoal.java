@@ -13,13 +13,13 @@ import android.view.ViewGroup;
  * Use the {@link UserRequirementFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class UserRequirementFragment extends Fragment {
+public class UpdateDailyGoal extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_user_requirement, container, false);
+        View view = inflater.inflate(R.layout.fragment_update_daily_goal, container, false);
         // Inflate the layout for this fragment
         return view;
     }
