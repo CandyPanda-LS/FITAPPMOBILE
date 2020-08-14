@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IndividualWorkout">
+    tools:context=".IndividualWorkout"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,7 +33,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        >
 
                         <ProgressBar
                             android:id="@+id/progressBar8"
@@ -41,7 +43,6 @@
                             android:max="360"
                             android:progress="270"
                             android:progressDrawable="@drawable/circle"
-
                             style="?android:progressBarStyleHorizontal"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +58,7 @@
                             android:progress="170"
                             android:progressDrawable="@drawable/circle"
 
-                            style="?android:progressBarStyleHorizontal"
+                            style="android:progressBarStyleHorizontal"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.503"
