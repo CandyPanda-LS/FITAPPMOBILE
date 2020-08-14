@@ -26,26 +26,28 @@ public class ProfileFragment extends Fragment {
     public View onCreateView( @NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
        View  rootView = inflater.inflate(R.layout.fragment_profile, container, false);
+
+
         //Bar Chart
         BarChart barChart =  (BarChart) rootView.findViewById(R.id.barChart);
 
         ArrayList<BarEntry> visitors = new ArrayList<>();
-        visitors.add(new BarEntry(2014,420));
-        visitors.add(new BarEntry(2015,440));
-        visitors.add(new BarEntry(2016,460));
-        visitors.add(new BarEntry(2017,470));
-        visitors.add(new BarEntry(2018,490));
+        visitors.add(new BarEntry(1,420));
+        visitors.add(new BarEntry(2,440));
+        visitors.add(new BarEntry(3,460));
+        visitors.add(new BarEntry(4,470));
+        visitors.add(new BarEntry(5,490));
 
-        BarDataSet barDataSet = new BarDataSet(visitors,"Visitors");
+        BarDataSet barDataSet = new BarDataSet(visitors,"Days");
         barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
         barDataSet.setValueTextColor(Color.BLACK);
-        barDataSet.setValueTextSize(16f);
+        barDataSet.setValueTextSize(10f);
 
         BarData barData = new BarData(barDataSet);
 
         barChart.setFitBars(true);
         barChart.setData(barData);
-        barChart.getDescription().setText("Bar Chart Example");
+        barChart.getDescription().setText("Daily Steps");
         barChart.animateY(2000);
 
 
