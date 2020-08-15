@@ -9,13 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class AddMealFragment extends Fragment {
+public class AddExerciseFragment extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_meal, container, false);
+        return inflater.inflate(R.layout.fragment_add_exercises, container, false);
     }
 }

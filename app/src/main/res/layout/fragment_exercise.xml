@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:id = "@+id/fragment_exercise_container">
 
 
     <ScrollView
@@ -57,7 +58,7 @@
                                 app:layout_constraintVertical_bias="0.075" />
 
                             <Button
-                                android:id="@+id/button8"
+                                android:id="@+id/viewWorkout"
                                 android:layout_width="105dp"
                                 android:layout_height="39dp"
                                 android:background="@drawable/button"
@@ -73,7 +74,7 @@
                                 app:layout_constraintVertical_bias="0.888" />
 
                             <Button
-                                android:id="@+id/updateDailyGoalBtn"
+                                android:id="@+id/editExerciseBtn"
                                 android:layout_width="92dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/button"
@@ -93,7 +94,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="110dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/updateDailyGoalBtn"
+                                app:layout_constraintEnd_toStartOf="@+id/editExerciseBtn"
                                 app:layout_constraintHorizontal_bias="0.108"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/textView7"
@@ -185,7 +186,7 @@
                                 app:layout_constraintVertical_bias="0.888" />
 
                             <Button
-                                android:id="@+id/updateDailyGoalBtn"
+                                android:id="@+id/editExerciseBtn"
                                 android:layout_width="92dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/button"
@@ -205,7 +206,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="110dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/updateDailyGoalBtn"
+                                app:layout_constraintEnd_toStartOf="@+id/editExerciseBtn"
                                 app:layout_constraintHorizontal_bias="0.108"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/textView7"
@@ -296,7 +297,7 @@
                                 app:layout_constraintVertical_bias="0.888" />
 
                             <Button
-                                android:id="@+id/updateDailyGoalBtn"
+                                android:id="@+id/editExerciseBtn"
                                 android:layout_width="92dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/button"
@@ -316,7 +317,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="110dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/updateDailyGoalBtn"
+                                app:layout_constraintEnd_toStartOf="@+id/editExerciseBtn"
                                 app:layout_constraintHorizontal_bias="0.108"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/textView7"
@@ -407,7 +408,7 @@
                                 app:layout_constraintVertical_bias="0.888" />
 
                             <Button
-                                android:id="@+id/updateDailyGoalBtn"
+                                android:id="@+id/editExerciseBtn"
                                 android:layout_width="92dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/button"
@@ -427,7 +428,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="110dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/updateDailyGoalBtn"
+                                app:layout_constraintEnd_toStartOf="@+id/editExerciseBtn"
                                 app:layout_constraintHorizontal_bias="0.108"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/textView7"
@@ -459,6 +460,45 @@
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintVertical_bias="0.567" />
 
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/path_816"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/addExerciseBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/addbtn"
+                                app:backgroundTint="@android:color/holo_orange_dark"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </LinearLayout>
