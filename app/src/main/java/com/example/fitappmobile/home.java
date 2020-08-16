@@ -43,9 +43,7 @@ public class home extends AppCompatActivity {
                       case R.id.nav_disease:
                           selectedFragment = new DiseaseFragment();
                           break;
-                      case R.id.nav_journal:
-                          selectedFragment = new JournalFragment();
-                          break;
+
                   }
 
                   getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();

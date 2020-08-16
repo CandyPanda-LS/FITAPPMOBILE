@@ -17,9 +17,6 @@
         android:id="@+id/nav_disease"
         android:icon="@drawable/ic_disease"
         android:title="Disease" />
-    <item
-        android:id="@+id/nav_journal"
-        android:icon="@drawable/ic_journal"
-        android:title="Journal" />
+
 
 </menu>
