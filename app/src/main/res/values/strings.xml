@@ -9,4 +9,6 @@
     <string name="add_target_steps_text">Target Steps</string>
     <string name="add_target_heart_points_text">Target Heart Points</string>
     <string name="add_set_goal_button">SET GOAL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
