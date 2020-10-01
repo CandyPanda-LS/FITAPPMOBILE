@@ -29,5 +29,7 @@
     <string name="update_disease_condition"> Condition</string>
     <string name="update_disease_name"> Disease Name</string>
     <string name="update_last_checkup">CheckUp</string>
+    <string name="edit_btn">Edit</string>
+
 
 </resources>
