@@ -11,11 +11,18 @@
     <string name="add_set_goal_button">SET GOAL</string>
 
 
+    <!-- Jayani-->
+    <string name="Add_meal">ADD MEAL</string>
+    <string name="View_meal_journal">VIEW MEAL JOURNAL</string>
+    <string name="Add_meal_name">Meal Name</string>
+    <string name="Add_meal_description">Description</string>
+    <string name="Add_calories">Calories</string>
+    <string name="Add_the_meal">ADD MEAL</string>
+    <string name="Meal_journal">MEAL JOURNAL</string>
+
+
     <!--Chamodi-->
     <string name="add_disease">ADD DISEASE</string>
     <string name="condition">Condition</string>
 
-
-    Condition
 </resources>
-
