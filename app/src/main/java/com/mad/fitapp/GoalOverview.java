@@ -25,12 +25,14 @@ public class GoalOverview extends Fragment {
     private TextView userName;
     private TextView heartRate;
     private TextView steps;
+    private TextView progressHeartRate;
+    private TextView progressSteps;
 
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference userReference = database.getReference().child("Users");
     private DatabaseReference goalReference = database.getReference().child("Goals");
-
+    private DatabaseReference progressReference = database.getReference().child("Progress");
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_goaloverview, container, false);
@@ -39,6 +41,8 @@ public class GoalOverview extends Fragment {
         userName = view.findViewById(R.id.goal_user_name);
         heartRate = view.findViewById(R.id.goal_heart_rate);
         steps = view.findViewById(R.id.goal_target_steps);
+        progressHeartRate = view.findViewById(R.id.progress_heartpoints_text);
+        progressSteps = view.findViewById(R.id.progress_steps_text);
         auth = FirebaseAuth.getInstance();
 
         displayGoalData();
@@ -68,5 +72,17 @@ public class GoalOverview extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError error) { }
         });
+
+        progressReference.child(auth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                progressHeartRate.setText(snapshot.child("completedHeartPoints").getValue().toString());
+                progressSteps.setText(snapshot.child("completedSteps").getValue().toString());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) { }
+        });
+
     }
 }

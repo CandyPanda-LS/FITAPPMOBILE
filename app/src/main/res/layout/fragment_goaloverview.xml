@@ -13,8 +13,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/goal_user_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="182dp"
+            android:layout_height="158dp"
             android:layout_marginTop="50dp"
             android:src="@drawable/image"
             app:civ_border_color="#FF000000"
@@ -32,9 +32,10 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/goal_user_image"
-            app:layout_constraintVertical_bias="0.22000003" />
+            app:layout_constraintVertical_bias="0.016" />
 
         <TextView
             android:id="@+id/goal_user_name"
@@ -72,7 +73,7 @@
                     android:text="Step Target"
                     android:textAlignment="center"
                     android:textColor="@color/bottomNavigaitonColor"
-                    android:textSize="24sp"
+                    android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.496"
@@ -96,6 +97,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout8"
             android:layout_width="185dp"
             android:layout_height="122dp"
             android:layout_marginStart="11dp"
@@ -113,15 +115,14 @@
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="150dp"
+                    android:layout_width="160dp"
                     android:layout_height="34dp"
                     android:layout_marginTop="16dp"
-                    android:text="Heart Points"
+                    android:text="Target Heart Points"
                     android:textAlignment="center"
                     android:textColor="@color/bottomNavigaitonColor"
-                    android:textSize="24sp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.487"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -135,10 +136,105 @@
                     android:textSize="30sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.49"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    app:layout_constraintVertical_bias="0.428" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="185dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardviewrectangle"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="165dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Completed Steps"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottomNavigaitonColor"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/progress_steps_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Loading"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottomNavigaitonColor"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="185dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/cardviewrectangle"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.882"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="179dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Completed Heart Ponits"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottomNavigaitonColor"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/progress_heartpoints_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Loading"
+                    android:textAlignment="center"
+                    android:textColor="@color/bottomNavigaitonColor"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    app:layout_constraintVertical_bias="0.592" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
