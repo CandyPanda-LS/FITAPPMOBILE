@@ -24,5 +24,6 @@
     <!--Chamodi-->
     <string name="add_disease">ADD DISEASE</string>
     <string name="condition">Condition</string>
+    <string name="last_checkup">Last Checkup</string>
 
 </resources>
