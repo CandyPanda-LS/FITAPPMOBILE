@@ -19,6 +19,10 @@
     <string name="Add_calories">Calories</string>
     <string name="Add_the_meal">ADD MEAL</string>
     <string name="Meal_journal">MEAL JOURNAL</string>
+    <string name="Update_meal_name">meal name</string>
+    <string name="Update_meal_description">meal description</string>
+    <string name="Update_calories">calories</string>
+    <string name="Update">Edit</string>
 
 
     <!--Chamodi-->
