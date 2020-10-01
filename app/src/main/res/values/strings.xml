@@ -13,4 +13,9 @@
 
     <!-- Jayani-->
     <string name="Add_meal">ADD MEAL</string>
+    <string name="View_meal_journal">VIEW MEAL JOURNAL</string>
+    <string name="Add_meal_name">Meal Name</string>
+    <string name="Add_meal_description">Description</string>
+    <string name="Add_calories">Calories</string>
+    <string name="Add_the_meal">ADD MEAL</string>
 </resources>
