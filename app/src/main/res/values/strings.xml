@@ -9,4 +9,13 @@
     <string name="add_target_steps_text">Target Steps</string>
     <string name="add_target_heart_points_text">Target Heart Points</string>
     <string name="add_set_goal_button">SET GOAL</string>
+
+
+    <!--Chamodi-->
+    <string name="add_disease">ADD DISEASE</string>
+    <string name="condition">Condition</string>
+
+
+    Condition
 </resources>
+
