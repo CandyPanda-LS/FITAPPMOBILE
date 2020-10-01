@@ -59,7 +59,7 @@
             android:background="@drawable/rectangle13"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="CheckUp"
+            android:text="@string/update_last_checkup"
             android:textAlignment="center"
             android:textColor="@color/bottomNavigaitonColor"
             app:layout_constraintEnd_toEndOf="parent"
