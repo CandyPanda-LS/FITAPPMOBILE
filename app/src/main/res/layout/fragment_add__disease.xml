@@ -66,7 +66,7 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/rectangle13"
             android:ems="10"
-            android:hint="Disease Name"
+            android:hint="@string/disease_name"
             android:inputType="textPersonName"
             android:textAlignment="center"
             android:textColor="@color/bottomNavigaitonColor"
