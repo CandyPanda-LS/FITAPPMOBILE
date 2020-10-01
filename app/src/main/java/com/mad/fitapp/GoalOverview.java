@@ -157,7 +157,7 @@ public class GoalOverview extends Fragment {
                     msgOne = "You are above " + finalSteps + " steps";
                 }
                 else if( finalSteps < 0 ){
-                    msgOne = "You have another " + finalSteps + " steps to complete";
+                    msgOne = "You have another " +  Math.abs(finalSteps) + " steps to complete";
                 }
                 else if(finalSteps == 0){
                     msgOne = "You have another " + finalSteps + " steps to complete";
@@ -167,7 +167,7 @@ public class GoalOverview extends Fragment {
                     msgTwo = "You are above " + finalHeartPoints + " heart points";
                 }
                 else if( finalHeartPoints < 0 ){
-                    msgTwo = "You have another " + finalHeartPoints + " heart points to complete";
+                    msgTwo = "You have another " + Math.abs(finalHeartPoints) + " heart points to complete";
                 }
                 else if(finalHeartPoints == 0){
                     msgTwo = "You have another " + finalHeartPoints + " heart points to complete";
