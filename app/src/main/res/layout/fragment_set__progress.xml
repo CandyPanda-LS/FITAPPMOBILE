@@ -23,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/completed_steps_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
@@ -32,6 +32,7 @@
             android:hint="Completed Steps"
             android:inputType="textPersonName"
             android:textAlignment="center"
+            android:textColor="@color/bottomNavigaitonColor"
             android:textColorHint="@color/bottomNavigaitonColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -39,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView21" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/completed_heartpoints_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
@@ -48,14 +49,15 @@
             android:hint="Completed Heart Points"
             android:inputType="textPersonName"
             android:textAlignment="center"
+            android:textColor="@color/bottomNavigaitonColor"
             android:textColorHint="@color/bottomNavigaitonColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/completed_steps_input" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/set_progress_button"
             android:layout_width="242dp"
             android:layout_height="56dp"
             android:layout_marginTop="32dp"
@@ -65,6 +67,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintTop_toBottomOf="@+id/completed_heartpoints_input" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
