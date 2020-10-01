@@ -26,6 +26,8 @@
     <string name="condition">Condition</string>
     <string name="last_checkup">Last Checkup</string>
     <string name="disease_name"> Disease Name</string>
+    <string name="update_disease_condition"> Condition</string>
+    <string name="update_disease_name"> Disease Name</string>
 
 
 </resources>
