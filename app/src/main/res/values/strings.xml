@@ -18,4 +18,5 @@
     <string name="Add_meal_description">Description</string>
     <string name="Add_calories">Calories</string>
     <string name="Add_the_meal">ADD MEAL</string>
+    <string name="Meal_journal">MEAL JOURNAL</string>
 </resources>
