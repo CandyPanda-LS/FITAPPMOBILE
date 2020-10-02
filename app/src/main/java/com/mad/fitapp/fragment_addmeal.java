@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,7 +73,20 @@ public class fragment_addmeal extends Fragment {
         String Calories = calories.getText().toString().trim();
         String MealID = reference.push().getKey();
 
+        if (TextUtils.isEmpty(MealName)) {
+            mealName.setError("Meal is required");
+            return;
+        }
 
+        if (TextUtils.isEmpty(Description)) {
+            description.setError("Description is required");
+            return;
+        }
+
+        if (TextUtils.isEmpty(Calories)) {
+            calories.setError("Calories is required");
+            return;
+        }
 
         dialog.setMessage("Adding Meal...");
         dialog.show();
