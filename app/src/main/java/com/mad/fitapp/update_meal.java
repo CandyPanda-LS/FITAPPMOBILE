@@ -72,7 +72,11 @@ public class update_meal extends Fragment {
 
         // validations
         if (TextUtils.isEmpty(name)) {
-            mealName.setError("Calories is required");
+            mealName.setError("Name is required");
+            return;
+        }
+        if (TextUtils.isEmpty(calories)) {
+            mealCalories.setError("Calories is required");
             return;
         }
 
