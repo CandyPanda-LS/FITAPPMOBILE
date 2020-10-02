@@ -64,8 +64,21 @@ public class SetGoal extends Fragment {
         String heartRate = targetHeartRate.getText().toString().trim();
         String goalId = reference.push().getKey();
 
+        //setting validations
         if (TextUtils.isEmpty(goalDate)) {
             currentDate.setError("Date is required");
+            return;
+        }
+        if (TextUtils.isEmpty(weight)) {
+            currentWeight.setError("Weigth is required");
+            return;
+        }
+        if (TextUtils.isEmpty(steps)) {
+            targetSteps.setError("Target Steps is required");
+            return;
+        }
+        if (TextUtils.isEmpty(heartRate)) {
+            targetHeartRate.setError("Target Heart Points is required");
             return;
         }
 
