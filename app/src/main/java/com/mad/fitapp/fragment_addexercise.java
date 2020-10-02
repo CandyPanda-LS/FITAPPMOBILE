@@ -77,7 +77,10 @@ public class fragment_addexercise extends Fragment {
             reps.setError("reps required");
             return;
         }
-        
+        if(TextUtils.isEmpty(Sets)){
+            sets.setError("set is required");
+            return;
+        }
 
 
 
