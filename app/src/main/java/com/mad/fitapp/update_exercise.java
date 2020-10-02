@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -83,6 +84,19 @@ public class update_exercise extends Fragment {
         String name = exerciseName.getText().toString().trim();
         String reps = exerciseReps.getText().toString().trim();
         String sets = exerciseSets.getText().toString().trim();
+
+        if(TextUtils.isEmpty(reps)){
+            exerciseReps.setError("Exercise name is required");
+            return;
+        }
+        if(TextUtils.isEmpty(name)){
+            exerciseName.setError("reps required");
+            return;
+        }
+        if(TextUtils.isEmpty(sets)){
+            exerciseSets.setError("set is required");
+            return;
+        }
 
         // validations
 

@@ -82,8 +82,6 @@ public class fragment_addexercise extends Fragment {
             return;
         }
 
-
-
         dialog.setMessage("Adding Exercise...");
         dialog.show();
 
