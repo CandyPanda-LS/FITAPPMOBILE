@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundfitapp"
+    tools:context=".Update_Progress" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="195dp"
+            android:layout_height="199dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/fitnessimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/update_completed_steps_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/rectangle13"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Loading"
+            android:textAlignment="center"
+            android:textColor="@color/bottomNavigaitonColor"
+            android:textColorHint="@color/bottomNavigaitonColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+        <EditText
+            android:id="@+id/update_completed_heartpoints_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rectangle13"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Loading"
+            android:textAlignment="center"
+            android:textColor="@color/bottomNavigaitonColor"
+            android:textColorHint="@color/bottomNavigaitonColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_completed_steps_text" />
+
+        <Button
+            android:id="@+id/update_progress_btn"
+            android:layout_width="242dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rectangle2"
+            android:text="Edit Progress"
+            android:textAlignment="center"
+            android:textColor="@color/bottomNavigaitonColor"
+            android:textColorHint="@color/bottomNavigaitonColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_completed_heartpoints_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
