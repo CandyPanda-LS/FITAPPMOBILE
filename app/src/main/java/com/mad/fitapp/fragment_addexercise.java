@@ -69,6 +69,19 @@ public class fragment_addexercise extends Fragment {
         String Sets = sets.getText().toString().trim();
         String ExerciseID = reference.push().getKey();
 
+        if(TextUtils.isEmpty(ExerciseName)){
+            exerciseName.setError("Exercise name is required");
+            return;
+        }
+        if(TextUtils.isEmpty(Reps)){
+            reps.setError("reps required");
+            return;
+        }
+        if(TextUtils.isEmpty(Sets)){
+            sets.setError("set is required");
+            return;
+        }
+
 
 
         dialog.setMessage("Adding Exercise...");
