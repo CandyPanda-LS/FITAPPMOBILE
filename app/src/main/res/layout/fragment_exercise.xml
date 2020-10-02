@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle1">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,11 +18,13 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="419dp"
-            android:layout_height="738dp"
+            android:layout_height="550dp"
             android:paddingStart="20dp"
             android:paddingBottom="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="-8dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <LinearLayout
