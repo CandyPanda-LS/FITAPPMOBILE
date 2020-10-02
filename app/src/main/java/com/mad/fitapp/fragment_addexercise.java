@@ -73,7 +73,11 @@ public class fragment_addexercise extends Fragment {
             exerciseName.setError("Exercise name is required");
             return;
         }
-
+        if(TextUtils.isEmpty(Reps)){
+            reps.setError("reps required");
+            return;
+        }
+        
 
 
 
