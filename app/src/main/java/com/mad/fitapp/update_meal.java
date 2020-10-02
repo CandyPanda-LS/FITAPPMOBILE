@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,6 +71,11 @@ public class update_meal extends Fragment {
         String description = mealDescription.getText().toString().trim();
 
         // validations
+        if (TextUtils.isEmpty(name)) {
+            mealName.setError("Calories is required");
+            return;
+        }
+
 
         dialog.setMessage("Updating Meal...");
         dialog.show();
