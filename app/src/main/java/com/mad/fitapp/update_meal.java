@@ -79,7 +79,10 @@ public class update_meal extends Fragment {
             mealCalories.setError("Calories is required");
             return;
         }
-
+        if (TextUtils.isEmpty(description)) {
+            mealDescription.setError("Description is required");
+            return;
+        }
 
         dialog.setMessage("Updating Meal...");
         dialog.show();
