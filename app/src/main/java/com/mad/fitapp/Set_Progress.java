@@ -66,10 +66,14 @@ public class Set_Progress extends Fragment {
         String CompletedHeartPoints = completedHeartPoints.getText().toString().trim();
         String ProgressId = reference.push().getKey();
 
-//        if (TextUtils.isEmpty(goalDate)) {
-//            currentDate.setError("Date is required");
-//            return;
-//        }
+        if (TextUtils.isEmpty(CompletedSteps)) {
+            completedSteps.setError("Completed Steps is required");
+            return;
+        }
+        if (TextUtils.isEmpty(CompletedHeartPoints)) {
+            completedHeartPoints.setError("Completed Heart Points is required");
+            return;
+        }
 
         dialog.setMessage("Adding Progress...");
         dialog.show();
