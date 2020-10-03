@@ -26,7 +26,7 @@
     <string name="Update">Edit</string>
 
 
-    <!--Chamodi-->
+    <!--Chamodi -->
     <string name="add_disease">ADD DISEASE</string>
     <string name="condition">Condition</string>
     <string name="last_checkup">Last Checkup</string>
@@ -37,6 +37,25 @@
     <string name="edit_btn">Edit</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Lasal-->
+    <string name="add_exercise_Header">ADD EXERCISES</string>
+    <string name="add_exercise_Hint_Exname">Exercise Name</string>
+    <string name="add_exercise_Hint_Reps">Reps</string>
+    <string name="add_exercise_Hint_Sets">Sets</string>
+    <string name="add_exercise_btn">ADD</string>
+
+    <string name="exercise_btn_Add">ADD EXERCISE</string>
+    <string name="exercise_btn_view">VIEW EXERCISE JOURNAL</string>
+
+    <string name="single_exercise_reps">Reps : </string>
+    <string name="single_exercise_sets">Sets : </string>
+
+
+    <string name="update_exercise_Hint_Exname">Exercise Name</string>
+    <string name="update_exercise_Hint_Reps">Reps</string>
+    <string name="update_exercise_Hint_Sets">Sets</string>
+    <string name="update_exercise_btn">UPDATE</string>
 
 
 </resources>
