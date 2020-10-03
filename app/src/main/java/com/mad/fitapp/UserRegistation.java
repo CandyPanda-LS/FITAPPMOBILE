@@ -47,7 +47,7 @@ public class UserRegistation extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference reference = database.getReference().child("Users");
+    private DatabaseReference userreference = database.getReference().child("Users");
     private StorageReference userImageReference;
 
     @Override
@@ -122,7 +122,7 @@ public class UserRegistation extends AppCompatActivity {
                                     public void onSuccess(Uri uri) {
                                         String url =  uri.toString();
                                         User newUser = new User(name, email, password, url);
-                                        reference.child(userId).setValue(newUser);
+                                        userreference.child(userId).setValue(newUser);
                                         dialog.dismiss();
                                         Toast.makeText(getApplicationContext(), "Account Created", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(getApplicationContext(), Home.class));

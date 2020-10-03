@@ -251,6 +251,7 @@
                 android:layout_height="35dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
+
                 android:text="Loading"
                 android:textAlignment="center"
                 android:textColor="@color/bottomNavigaitonColor"
@@ -273,7 +274,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/update_progress_button"
                 android:layout_width="35dp"
                 android:layout_height="37dp"
                 android:layout_marginTop="24dp"

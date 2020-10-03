@@ -33,6 +33,11 @@ public class GoalOverview extends Fragment {
     public String completedSteps;
     public String completedHeartPoints;
 
+    public String progressId;
+    public String progressHeartPoints;
+    public String progress_steps;
+    public Update_Progress updateProgress;
+
     private ImageView userProfilePicture;
     private TextView userName;
     private TextView heartRate;
@@ -41,6 +46,7 @@ public class GoalOverview extends Fragment {
     private TextView progressSteps;
     private  TextView progressoverview;
     private Button deleteProgressButton;
+    private Button updateProgressButton;
 
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -59,9 +65,39 @@ public class GoalOverview extends Fragment {
         progressSteps = view.findViewById(R.id.progress_steps_text);
         progressoverview = view.findViewById(R.id.progress_overview);
         deleteProgressButton = view.findViewById(R.id.delete_progress_button);
+        updateProgressButton = view.findViewById(R.id.update_progress_button);
         auth = FirebaseAuth.getInstance();
+        updateProgress = new Update_Progress();
 
         displayGoalData();
+
+        //Update Progress
+        updateProgressButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                progressReference.child(auth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        progressId = snapshot.child("progressId").getValue().toString();
+                        progressHeartPoints = snapshot.child("completedHeartPoints").getValue().toString();
+                        progress_steps = snapshot.child("completedSteps").getValue().toString();
+                        Bundle bundle = new Bundle();
+                        bundle.putString("progressId", progressId);
+                        bundle.putString("progressSteps", progress_steps);
+                        bundle.putString("progressHeartPoints", progressHeartPoints);
+                        updateProgress.setArguments(bundle);
+
+                        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.main_frame, updateProgress);
+                        transaction.addToBackStack(null);
+                        transaction.commit();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) { }
+                });
+            }
+        });
 
 
         //Delete Disease

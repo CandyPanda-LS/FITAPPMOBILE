@@ -71,7 +71,7 @@ public class Exercise_Journal extends Fragment {
                 holder.exerciseReps.setText(model.getReps());
                 holder.exerciseSets.setText(model.getSets());
 
-                //Update Disease Details
+                //Update Exericise Details
                 holder.updateExercise.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -89,7 +89,7 @@ public class Exercise_Journal extends Fragment {
                     }
                 });
 
-                //Delete Disease
+                //Delete Exericise
                 holder.deleteExercise.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
