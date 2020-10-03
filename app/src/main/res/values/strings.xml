@@ -36,5 +36,13 @@
     <string name="update_last_checkup">CheckUp</string>
     <string name="edit_btn">Edit</string>
 
+    <!--Lasal-->
+    <string name="add_exercise_Header">ADD EXERCISES</string>
+    <string name="add_exercise_Hint_Exname">Exercise Name</string>
+    <string name="add_exercise_Hint_Reps">Reps</string>
+    <string name="add_exercise_Sets">Sets</string>
+    <string name="add_exercise_btn">ADD</string>
+
+
 
 </resources>
