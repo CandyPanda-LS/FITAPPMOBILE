@@ -97,13 +97,12 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout12"
             android:layout_width="355dp"
             android:layout_height="180dp"
             android:layout_marginTop="28dp"
-            android:layout_marginBottom="70dp"
             android:background="@drawable/cardviewrectangle"
             android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
@@ -134,7 +133,23 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/signoutbutton"
+            android:layout_width="288dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/rectangle13"
+            android:text="signout"
+            android:textColor="@color/bottomNavigaitonColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
