@@ -9,6 +9,7 @@
     <string name="add_target_steps_text">Target Steps</string>
     <string name="add_target_heart_points_text">Target Heart Points</string>
     <string name="add_set_goal_button">SET GOAL</string>
+    <string name="SET_DAILY_PROGRESS">SET DAILY PROGRESS</string>
 
 
     <!-- Jayani-->
@@ -34,5 +35,15 @@
     <string name="update_disease_name"> Disease Name</string>
     <string name="update_last_checkup">CheckUp</string>
     <string name="edit_btn">Edit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Lasal-->
+    <string name="add_exercise_Header">ADD EXERCISES</string>
+    <string name="add_exercise_Hint_Exname">Exercise Name</string>
+    <string name="add_exercise_Hint_Reps">Reps</string>
+    <string name="add_exercise_Sets">Sets</string>
+    <string name="add_exercise_btn">ADD</string>
+
 
 </resources>

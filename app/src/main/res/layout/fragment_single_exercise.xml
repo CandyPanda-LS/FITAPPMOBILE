@@ -22,6 +22,35 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Sets:"
+                android:textColor="@color/bottomNavigaitonColor"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/display_exercise_sets"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toEndOf="@+id/display_exercise_reps" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="49dp"
+                android:text="Reps:"
+                android:textColor="@color/bottomNavigaitonColor"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/display_exercise_reps"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_exercise_name"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
                 android:id="@+id/display_exercise_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +68,7 @@
                 android:id="@+id/display_exercise_reps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="76dp"
                 android:layout_marginTop="48dp"
                 android:text="Reps"
                 android:textAlignment="center"
@@ -53,14 +82,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
+                android:layout_marginEnd="60dp"
                 android:text="Sets"
                 android:textAlignment="center"
                 android:textColor="@color/bottomNavigaitonColor"
                 android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.346"
-                app:layout_constraintStart_toEndOf="@+id/display_exercise_reps"
-                app:layout_constraintTop_toBottomOf="@+id/display_exercise_name" />
+                app:layout_constraintTop_toBottomOf="@+id/display_exercise_name"
+                app:layout_constraintVertical_bias="0.047" />
 
             <Button
                 android:id="@+id/update_Exercise"

@@ -20,6 +20,7 @@ public class Dashboard extends Fragment {
         //addDiseaseBtn
         Button setGoalButtonFragment =  (Button) view.findViewById(R.id.setGoalButton);
         Button viewgoaloverviewButtonFragment =  (Button) view.findViewById(R.id.view_user_goal_btn);
+        Button Set_daily_progress_fragment_btn =  (Button) view.findViewById(R.id.set_daily_progress_fragment_btn);
 
         //Navigate button for set daily goal button
         setGoalButtonFragment.setOnClickListener(new View.OnClickListener(){
@@ -39,6 +40,18 @@ public class Dashboard extends Fragment {
                 FragmentTransaction fr = getFragmentManager().beginTransaction();
                 fr.addToBackStack(null);
                 fr.replace(R.id.main_frame, new GoalOverview());
+                fr.commit();
+            }
+
+        });
+
+        //Navigate button for set daily goal button
+        Set_daily_progress_fragment_btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.addToBackStack(null);
+                fr.replace(R.id.main_frame, new Set_Progress());
                 fr.commit();
             }
 
