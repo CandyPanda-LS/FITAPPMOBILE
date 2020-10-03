@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,6 +71,22 @@ public class Add_Disease extends Fragment {
         String DiseaseCondition = diseaseCondition.getText().toString().trim();
         String DiseaseCheckup = diseaseCheckup.getText().toString().trim();
         String DiseaseID = reference.push().getKey();
+
+        if(TextUtils.isEmpty(DiseaseName)){
+            diseaseName.setError("Disease name is required");
+            return;
+        }
+
+        if(TextUtils.isEmpty(DiseaseCondition)){
+            diseaseCondition.setError("Disease condition is required");
+            return;
+        }
+
+        if(TextUtils.isEmpty(DiseaseCheckup)){
+            diseaseCheckup.setError("Disease Checkup date is required");
+            return;
+        }
+
 
         dialog.setMessage("Adding Disease");
         dialog.show();
