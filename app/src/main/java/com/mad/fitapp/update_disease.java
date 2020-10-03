@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,21 @@ public class update_disease extends Fragment {
         String lastcheckup = diseaseLastCheckUp.getText().toString().trim();
 
         // validations
+        if(TextUtils.isEmpty(name)){
+            diseaseName.setError("Disease name is required");
+            return;
+        }
+
+        if(TextUtils.isEmpty(condition)){
+            diseaseCondition.setError("Disease condition is required");
+            return;
+        }
+
+        if(TextUtils.isEmpty(lastcheckup )){
+            diseaseLastCheckUp.setError("Disease Checkup date is required");
+            return;
+        }
+
 
         dialog.setMessage("Updating Disease...");
         dialog.show();
