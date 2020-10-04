@@ -15,6 +15,7 @@ public class ExampleUnitTest {
 
     private GoalOverview goaloverview;
 
+    //IT19139036 A.S.V JAYADEVA
     @Before
     public void setUp(){
 
@@ -24,7 +25,7 @@ public class ExampleUnitTest {
     @Test
     public void check_step_progress_Correct() {
         int result = goaloverview.calculateStepProgress(200,150);
-        assertEquals(40,result);
+        assertEquals(50,result);
     }
 
     @Test
