@@ -72,6 +72,8 @@ public class Add_Disease extends Fragment {
         String DiseaseCheckup = diseaseCheckup.getText().toString().trim();
         String DiseaseID = reference.push().getKey();
 
+
+        //Validations
         if(TextUtils.isEmpty(DiseaseName)){
             diseaseName.setError("Disease name is required");
             return;
