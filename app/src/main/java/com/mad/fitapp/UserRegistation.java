@@ -1,9 +1,7 @@
 package com.mad.fitapp;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -19,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -30,11 +27,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
 import java.io.IOException;
-
 public class UserRegistation extends AppCompatActivity {
-
     private ImageView profileImage;
     private EditText userName;
     private EditText userEmail;
@@ -44,32 +38,25 @@ public class UserRegistation extends AppCompatActivity {
     private static final int GALARY_INTENT = 2;
     private Uri imageUri;
     private String userId;
-
     private FirebaseAuth auth;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference userreference = database.getReference().child("Users");
+    private DatabaseReference userReference = database.getReference().child("Users");
     private StorageReference userImageReference;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_registation);
-
         auth = FirebaseAuth.getInstance();
         dialog = new ProgressDialog(this);
         userImageReference = FirebaseStorage.getInstance().getReference("User_Profile_images");
-
         uploadImage();
-
     }
-
     private void uploadImage() {
         profileImage = findViewById(R.id.goal_user_image);
         userName = findViewById(R.id.registration_user_name);
         userEmail = findViewById(R.id.registration_user_email);
         userPassword = findViewById(R.id.registration_user_password);
         registerButton = findViewById(R.id.registratoin_button);
-
         profileImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +66,6 @@ public class UserRegistation extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(intent, "ProductImage"), GALARY_INTENT);
             }
         });
-
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,42 +73,39 @@ public class UserRegistation extends AppCompatActivity {
             }
         });
     }
-
     private void registration() {
         if (imageUri != null) {
             final String name = userName.getText().toString().trim();
             final String email = userEmail.getText().toString().trim();
             final String password = userPassword.getText().toString().trim();
-
             if (TextUtils.isEmpty(name)) {
                 userName.setError("Name is required");
                 return;
             }
-
             if (TextUtils.isEmpty(email)) {
                 userEmail.setError("Email is required");
                 return;
             }
-
             dialog.setMessage("Creating Account...");
             dialog.show();
-
+            System.out.println("Hello");
             auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
+                    System.out.println("Inside task");
                     if (task.isSuccessful()) {
-                        userId = auth.getCurrentUser().getUid();
+                        System.out.println("user id : " + userId);
                         final StorageReference uploadData = userImageReference.child(System.currentTimeMillis() + "." + GetFileExtension(imageUri));
-
                         uploadData.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                             @Override
                             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                                 uploadData.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                     @Override
                                     public void onSuccess(Uri uri) {
+                                        userId = auth.getCurrentUser().getUid();
                                         String url =  uri.toString();
                                         User newUser = new User(name, email, password, url);
-                                        userreference.child(userId).setValue(newUser);
+                                        userReference.child(userId).setValue(newUser);
                                         dialog.dismiss();
                                         Toast.makeText(getApplicationContext(), "Account Created", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(getApplicationContext(), Home.class));
@@ -140,11 +123,9 @@ public class UserRegistation extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Please select an image", Toast.LENGTH_SHORT).show();
         }
     }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (requestCode == GALARY_INTENT && resultCode == Activity.RESULT_OK) {
             imageUri = data.getData();
             try {
@@ -155,7 +136,6 @@ public class UserRegistation extends AppCompatActivity {
             }
         }
     }
-
     public String GetFileExtension(Uri uri) {
         ContentResolver contentResolver = this.getContentResolver();
         MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
