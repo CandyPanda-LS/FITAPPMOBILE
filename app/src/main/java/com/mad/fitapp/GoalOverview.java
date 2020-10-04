@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -53,9 +54,14 @@ public class GoalOverview extends Fragment {
     private DatabaseReference userReference = database.getReference().child("Users");
     private DatabaseReference goalReference = database.getReference().child("Goals");
     private DatabaseReference progressReference = database.getReference().child("Progress");
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_goaloverview, container, false);
+
+
 
         userProfilePicture = view.findViewById(R.id.goal_user_image);
         userName = view.findViewById(R.id.goal_user_name);
