@@ -34,5 +34,18 @@ public class ExampleUnitTest {
         assertEquals(5,result);
     }
 
+    //IT19118864 L.C.R.Karunathunge
+    @Test
+    public void checkStepProgressCorrect() {
+        int result = goaloverview.calculateStepProgress(150,125);
+        assertEquals(25,result);
+    }
+
+    @Test
+    public void checkHeartPointsProgressCorrect(){
+        int result = goaloverview.calculateHeartPointsProgress(75,45);
+        assertEquals(30,result);
+    }
+
 
 }
