@@ -184,8 +184,12 @@ public class GoalOverview extends Fragment {
                 progressHeartRate.setText(snapshot.child("completedHeartPoints").getValue().toString());
                 progressSteps.setText(snapshot.child("completedSteps").getValue().toString());
 
-                int finalSteps = Integer.parseInt(completedSteps) - Integer.parseInt(targetSteps);
-                int finalHeartPoints = Integer.parseInt(completedHeartPoints) - Integer.parseInt(targetHeartPoints);
+                //int finalSteps = Integer.parseInt(completedSteps) - Integer.parseInt(targetSteps);
+                int finalSteps = calculateStepProgress(Integer.parseInt(completedSteps),Integer.parseInt(targetSteps));
+                //int finalHeartPoints = Integer.parseInt(completedHeartPoints) - Integer.parseInt(targetHeartPoints);
+                int finalHeartPoints = calculateHeartPointsProgress(Integer.parseInt(completedHeartPoints),Integer.parseInt(targetHeartPoints));
+
+
                 String msgOne = "";
                 String msgTwo = "";
 
@@ -221,4 +225,22 @@ public class GoalOverview extends Fragment {
 
 
     }
+
+
+    public static int  calculateStepProgress(int completedSteps,int targetSteps){
+
+        int outputSteps = completedSteps - targetSteps;
+
+        return  Math.abs(outputSteps);
+
+    }
+
+    public static int  calculateHeartPointsProgress(int completedHeartPoints,int targetHeartPoints){
+
+        int outputHeartpoints = completedHeartPoints - targetHeartPoints;
+
+        return  Math.abs(outputHeartpoints);
+
+    }
+
 }
